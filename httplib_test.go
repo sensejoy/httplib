@@ -9,8 +9,8 @@ func TestCall(t *testing.T) {
 	req := Request{
 		Method: GET,
 		Url:    "https://www.baidu.com/",
-        ConnectTimeout:   1000, //one second
-        ReadWriteTimeout: 100,  //100 millisecond
+        	ConnectTimeout:   1000, //one second
+        	ReadWriteTimeout: 100,  //100 millisecond
 	}
 	res := Call(req)
 	if res.Status != 200 {
